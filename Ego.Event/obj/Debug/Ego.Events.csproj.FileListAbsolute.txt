@@ -1,6 +1,0 @@
-E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Event\bin\Debug\Ego.Events.dll
-E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Event\bin\Debug\Ego.Events.pdb
-E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Event\obj\Debug\Ego.Events.csprojAssemblyReference.cache
-E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Event\obj\Debug\Ego.Events.csproj.CoreCompileInputs.cache
-E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Event\obj\Debug\Ego.Events.dll
-E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Event\obj\Debug\Ego.Events.pdb

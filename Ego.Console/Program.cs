@@ -10,6 +10,7 @@ namespace Ego.Console
     {
         static void Main(string[] args)
         {
+
         }
     }
 }

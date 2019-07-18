@@ -4,3 +4,9 @@ E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\obj\Debug\Eg
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\obj\Debug\Ego.Infrastructure.csproj.CoreCompileInputs.cache
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\obj\Debug\Ego.Infrastructure.dll
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\obj\Debug\Ego.Infrastructure.pdb
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\bin\Debug\Ego.Infrastructure.dll
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\bin\Debug\Ego.Infrastructure.pdb
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\obj\Debug\Ego.Infrastructure.csproj.CoreCompileInputs.cache
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\obj\Debug\Ego.Infrastructure.dll
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\obj\Debug\Ego.Infrastructure.pdb
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\obj\Debug\Ego.Infrastructure.csprojAssemblyReference.cache

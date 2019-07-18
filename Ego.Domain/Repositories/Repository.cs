@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,77 +15,71 @@ namespace Ego.Domain.Repositories
     public abstract class Repository<TAggregateRoot> : IRepository<TAggregateRoot>
         where TAggregateRoot : class, IAggregateRoot
     {
-        #region Private Fields
-        private readonly IRepositoryContext context;
-        public IRepositoryContext Context => context;
-        #endregion
+        IRepositoryContext context;
+        public IRepositoryContext Context { get => context; set => context = value; }
 
-        /// <summary>
-        /// Initializes a new instance of <c>Repository&lt;TAggregateRoot&gt;</c> class.
-        /// </summary>
-        /// <param name="context">The repository context being used by the repository.</param>
         public Repository(IRepositoryContext context)
         {
             this.context = context;
         }
 
+        #region Protected Methods
+        protected abstract void DoAdd(TAggregateRoot aggregateRoot);
+        protected abstract void DoRemove(TAggregateRoot aggregateRoot);
+        protected abstract void DoUpdate(TAggregateRoot aggregateRoot);
+        protected abstract void DoSave(TAggregateRoot aggregateRoot);
+        protected abstract bool DoExists(Guid key);
+        protected abstract bool DoExists(TAggregateRoot aggregateRoot);
+        protected abstract TAggregateRoot DoGetItem(Guid key);
+        protected abstract TAggregateRoot DoGetItem(Expression<Func<TAggregateRoot, bool>> expression);
+        protected abstract ICollection<TAggregateRoot> DoGetList(Expression<Func<TAggregateRoot, bool>> expression);
+        #endregion
+
         #region IRepository<TAggregateRoot> Members
         public void Add(TAggregateRoot aggregateRoot)
         {
-            throw new NotImplementedException();
-        }
-
-        public bool Exists(ISpecification<TAggregateRoot> specification)
-        {
-            throw new NotImplementedException();
-        }
-
-        public TAggregateRoot GetByKey(Guid key)
-        {
-            throw new NotImplementedException();
+            DoAdd(aggregateRoot);
         }
 
         public void Remove(TAggregateRoot aggregateRoot)
         {
-            throw new NotImplementedException();
+            DoRemove(aggregateRoot);
         }
 
         public void Update(TAggregateRoot aggregateRoot)
         {
+            DoUpdate(aggregateRoot);
+        }
+
+        public void Save(TAggregateRoot aggregateRoot)
+        {
+            DoSave(aggregateRoot);
+        }
+
+        public bool Exists(Guid key)
+        {
             throw new NotImplementedException();
         }
-        #endregion
 
-        #region Protected Methods
+        public bool Exists(TAggregateRoot aggregateRoot)
+        {
+            throw new NotImplementedException();
+        }
 
-        /// <summary>
-        /// Adds an aggregate root to the repository.
-        /// </summary>
-        /// <param name="aggregateRoot">The aggregate root to be added to the repository.</param>
-        protected abstract void DoAdd(TAggregateRoot aggregateRoot);
-        /// <summary>
-        /// Gets the aggregate root instance from repository by a given key.
-        /// </summary>
-        /// <param name="key">The key of the aggregate root.</param>
-        /// <returns>The instance of the aggregate root.</returns>
-        protected abstract TAggregateRoot DoGetByKey(Guid key);
-        /// <summary>
-        /// Checkes whether the aggregate root, which matches the given specification, exists in the repository.
-        /// </summary>
-        /// <param name="specification">The specification with which the aggregate root should match.</param>
-        /// <returns>True if the aggregate root exists, otherwise false.</returns>
-        protected abstract bool DoExists(ISpecification<TAggregateRoot> specification);
-        /// <summary>
-        /// Removes the aggregate root from current repository.
-        /// </summary>
-        /// <param name="aggregateRoot">The aggregate root to be removed.</param>
-        protected abstract void DoRemove(TAggregateRoot aggregateRoot);
-        /// <summary>
-        /// Updates the aggregate root in the current repository.
-        /// </summary>
-        /// <param name="aggregateRoot">The aggregate root to be updated.</param>
-        protected abstract void DoUpdate(TAggregateRoot aggregateRoot);
+        public TAggregateRoot GetItem(Guid key)
+        {
+            throw new NotImplementedException();
+        }
 
+        public TAggregateRoot GetItem(Expression<Func<TAggregateRoot, bool>> expression)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ICollection<TAggregateRoot> GetList(Expression<Func<TAggregateRoot, bool>> expression)
+        {
+            throw new NotImplementedException();
+        }
         #endregion
     }
 }
