@@ -1,0 +1,16 @@
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Repositories\bin\Debug\Ego.Repositories.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Repositories\bin\Debug\Ego.Repositories.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Repositories\obj\Debug\Ego.Repositories.csprojAssemblyReference.cache
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Repositories\obj\Debug\Ego.Repositories.csproj.CoreCompileInputs.cache
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Repositories\obj\Debug\Ego.Repositories.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Repositories\obj\Debug\Ego.Repositories.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Repositories\bin\Debug\Ego.Repositories.dll.config
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Repositories\bin\Debug\Ego.Domain.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Repositories\bin\Debug\EntityFramework.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Repositories\bin\Debug\EntityFramework.SqlServer.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Repositories\bin\Debug\Ego.Infrastructure.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Repositories\bin\Debug\Ego.Domain.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Repositories\bin\Debug\EntityFramework.xml
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Repositories\bin\Debug\EntityFramework.SqlServer.xml
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Repositories\bin\Debug\Ego.Infrastructure.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Repositories\obj\Debug\Ego.Repositories.csproj.CopyComplete

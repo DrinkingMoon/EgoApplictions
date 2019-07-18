@@ -1,0 +1,7 @@
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Console.exe.config
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Console.exe
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Console.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\obj\Debug\Ego.Console.csprojAssemblyReference.cache
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\obj\Debug\Ego.Console.csproj.CoreCompileInputs.cache
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\obj\Debug\Ego.Console.exe
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\obj\Debug\Ego.Console.pdb

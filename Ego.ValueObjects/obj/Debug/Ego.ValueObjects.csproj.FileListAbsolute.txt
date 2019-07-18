@@ -1,0 +1,6 @@
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.ValueObjects\bin\Debug\Ego.ValueObjects.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.ValueObjects\bin\Debug\Ego.ValueObjects.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.ValueObjects\obj\Debug\Ego.ValueObjects.csprojAssemblyReference.cache
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.ValueObjects\obj\Debug\Ego.ValueObjects.csproj.CoreCompileInputs.cache
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.ValueObjects\obj\Debug\Ego.ValueObjects.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.ValueObjects\obj\Debug\Ego.ValueObjects.pdb

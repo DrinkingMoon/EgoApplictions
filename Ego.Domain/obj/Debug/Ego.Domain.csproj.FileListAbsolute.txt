@@ -1,0 +1,9 @@
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\Ego.Domain.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\Ego.Domain.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\Ego.Infrastructure.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\Ego.Infrastructure.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.csprojAssemblyReference.cache
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.csproj.CoreCompileInputs.cache
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.csproj.CopyComplete
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.pdb
