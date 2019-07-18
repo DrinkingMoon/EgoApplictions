@@ -6,9 +6,12 @@ namespace Ego.Domain.Repositories.EntityFramework
 {
     public class EntityFrameworkRepositoryContext : RepositoryContext, IEntityFrameworkRepositoryContext
     {
-        private readonly ThreadLocal<EntityFrameworkDbContext> localCtx;
+        ThreadLocal<EntityFrameworkDbContext> localCtx;
 
-        public EntityFrameworkRepositoryContext() { }
+        public EntityFrameworkRepositoryContext(EntityFrameworkDbContext entityFrameworkDbContext)
+        {
+            localCtx = new ThreadLocal<EntityFrameworkDbContext>(() => { return entityFrameworkDbContext; });
+        }
 
         public override void RegisterDeleted<TAggregateRoot>(TAggregateRoot obj)
         {

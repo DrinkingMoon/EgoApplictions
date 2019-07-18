@@ -21,3 +21,5 @@ D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Domai
 D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Infrastructure.pdb
 D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\EntityFramework.xml
 D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Console\obj\Debug\Ego.Console.csproj.CopyComplete
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Service.dll
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Service.pdb

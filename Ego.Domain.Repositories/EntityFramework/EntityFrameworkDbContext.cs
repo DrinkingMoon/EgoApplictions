@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Ego.Domain.Repositories.EntityFramework
 {
-    public class EntityFrameworkDbContext: DbContext
+    public abstract class EntityFrameworkDbContext: DbContext
     {
         public EntityFrameworkDbContext(string nameOrConnectionString) : base(nameOrConnectionString) { }
 

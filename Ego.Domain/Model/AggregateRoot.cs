@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,8 @@ namespace Ego.Domain.Model
     {
         #region Protected Fields
         protected Guid id;
+
+        public event PropertyChangedEventHandler PropertyChanged;
         #endregion
 
         #region Public Methods
