@@ -38,6 +38,7 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
@@ -58,6 +59,11 @@
     <Compile Include="EntityFramework\IEntityFrameworkRepositoryContext.cs" />
     <Compile Include="EntityFramework\Mapping\DishMap.cs" />
     <Compile Include="EntityFramework\Mapping\RestaurantMap.cs" />
+    <Compile Include="Migrations\201907190106233_Init.cs" />
+    <Compile Include="Migrations\201907190106233_Init.Designer.cs">
+      <DependentUpon>201907190106233_Init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -72,6 +78,14 @@
       <Project>{6c651e9d-2385-4fa3-98bf-0c6255a875de}</Project>
       <Name>Ego.Infrastructure</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201907190106233_Init.resx">
+      <DependentUpon>201907190106233_Init.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

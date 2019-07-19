@@ -6,11 +6,17 @@ namespace Ego.Domain.Repositories.EntityFramework
 {
     public class EntityFrameworkRepositoryContext : RepositoryContext, IEntityFrameworkRepositoryContext
     {
-        ThreadLocal<EntityFrameworkDbContext> localCtx;
+        readonly ThreadLocal<EntityFrameworkDbContext> localCtx = new ThreadLocal<EntityFrameworkDbContext>();
 
         public EntityFrameworkRepositoryContext(EntityFrameworkDbContext entityFrameworkDbContext)
         {
             localCtx = new ThreadLocal<EntityFrameworkDbContext>(() => { return entityFrameworkDbContext; });
+        }
+
+        public override void RegisterNew<TAggregateRoot>(TAggregateRoot obj)
+        {
+            localCtx.Value.Set<TAggregateRoot>().Add(obj);
+            Committed = false;
         }
 
         public override void RegisterDeleted<TAggregateRoot>(TAggregateRoot obj)
@@ -22,12 +28,6 @@ namespace Ego.Domain.Repositories.EntityFramework
         public override void RegisterModified<TAggregateRoot>(TAggregateRoot obj)
         {
             localCtx.Value.Entry<TAggregateRoot>(obj).State = System.Data.Entity.EntityState.Modified;
-            Committed = false;
-        }
-
-        public override void RegisterNew<TAggregateRoot>(TAggregateRoot obj)
-        {
-            localCtx.Value.Set<TAggregateRoot>().Add(obj);
             Committed = false;
         }
 
@@ -45,8 +45,11 @@ namespace Ego.Domain.Repositories.EntityFramework
         {
             if (!Committed)
             {
-                var validationErrors = localCtx.Value.GetValidationErrors();
-                var count = localCtx.Value.SaveChanges();
+                //var validationErrors = localCtx.Value.GetValidationErrors();
+                //var count = localCtx.Value.SaveChanges();
+                localCtx.Value.GetValidationErrors();
+                localCtx.Value.SaveChanges();
+
                 Committed = true;
             }
         }

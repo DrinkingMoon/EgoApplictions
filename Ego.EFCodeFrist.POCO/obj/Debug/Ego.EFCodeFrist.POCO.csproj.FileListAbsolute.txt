@@ -1,0 +1,11 @@
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.EFCodeFrist.POCO\bin\Debug\Ego.EFCodeFrist.POCO.exe.config
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.EFCodeFrist.POCO\bin\Debug\Ego.EFCodeFrist.POCO.exe
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.EFCodeFrist.POCO\bin\Debug\Ego.EFCodeFrist.POCO.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.EFCodeFrist.POCO\bin\Debug\EntityFramework.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.EFCodeFrist.POCO\bin\Debug\EntityFramework.SqlServer.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.EFCodeFrist.POCO\bin\Debug\EntityFramework.xml
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.EFCodeFrist.POCO\bin\Debug\EntityFramework.SqlServer.xml
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.EFCodeFrist.POCO\obj\Debug\Ego.EFCodeFrist.POCO.csproj.CoreCompileInputs.cache
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.EFCodeFrist.POCO\obj\Debug\Ego.EFCodeFrist.POCO.csproj.CopyComplete
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.EFCodeFrist.POCO\obj\Debug\Ego.EFCodeFrist.POCO.exe
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.EFCodeFrist.POCO\obj\Debug\Ego.EFCodeFrist.POCO.pdb

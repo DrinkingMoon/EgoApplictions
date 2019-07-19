@@ -17,38 +17,6 @@ namespace Ego.Domain.Repositories.EntityFramework
                 this.efContext = context as IEntityFrameworkRepositoryContext;
         }
 
-        private MemberExpression GetMemberInfo(LambdaExpression lambda)
-        {
-            if (lambda == null)
-                throw new ArgumentNullException("method");
-
-            MemberExpression memberExpr = null;
-
-            if (lambda.Body.NodeType == ExpressionType.Convert)
-            {
-                memberExpr =
-                    ((UnaryExpression)lambda.Body).Operand as MemberExpression;
-            }
-            else if (lambda.Body.NodeType == ExpressionType.MemberAccess)
-            {
-                memberExpr = lambda.Body as MemberExpression;
-            }
-
-            if (memberExpr == null)
-                throw new ArgumentException("method");
-
-            return memberExpr;
-        }
-
-        private string GetEagerLoadingPath(Expression<Func<TAggregateRoot, dynamic>> eagerLoadingProperty)
-        {
-            MemberExpression memberExpression = this.GetMemberInfo(eagerLoadingProperty);
-            var parameterName = eagerLoadingProperty.Parameters.First().Name;
-            var memberExpressionStr = memberExpression.ToString();
-            var path = memberExpressionStr.Replace(parameterName + ".", "");
-            return path;
-        }
-
         protected IEntityFrameworkRepositoryContext EFContext
         {
             get { return this.efContext; }
@@ -56,27 +24,28 @@ namespace Ego.Domain.Repositories.EntityFramework
 
         protected override void DoAdd(TAggregateRoot aggregateRoot)
         {
+            aggregateRoot.S_CreateTime = DateTime.Now;
             efContext.RegisterNew<TAggregateRoot>(aggregateRoot);
-        }
-
-        protected override bool DoExists(TAggregateRoot aggregateRoot)
-        {
-            if (aggregateRoot == null)
-            {
-                return false;
-            }
-
-            var count = efContext.Context.Set<TAggregateRoot>().Where(k => k.ID == aggregateRoot.ID).Count();
-            return count != 0;
         }
 
         protected override void DoRemove(TAggregateRoot aggregateRoot)
         {
+            if (aggregateRoot == null)
+            {
+                return;
+            }
+
             efContext.RegisterDeleted<TAggregateRoot>(aggregateRoot);
         }
 
         protected override void DoUpdate(TAggregateRoot aggregateRoot)
         {
+            if (aggregateRoot == null)
+            {
+                return;
+            }
+
+            aggregateRoot.S_UpdateTime = DateTime.Now;
             efContext.RegisterModified<TAggregateRoot>(aggregateRoot);
         }
 
@@ -105,19 +74,44 @@ namespace Ego.Domain.Repositories.EntityFramework
             return count != 0;
         }
 
+        protected override bool DoExists(TAggregateRoot aggregateRoot)
+        {
+            if (aggregateRoot == null)
+            {
+                return false;
+            }
+
+            var count = efContext.Context.Set<TAggregateRoot>().Where(k => k.ID == aggregateRoot.ID).Count();
+            return count != 0;
+        }
+
         protected override TAggregateRoot DoGetItem(Guid key)
         {
             return efContext.Context.Set<TAggregateRoot>().Where(k => k.ID == key).FirstOrDefault();
         }
 
-        protected override TAggregateRoot DoGetItem(Expression<Func<TAggregateRoot, bool>> expression)
+        protected override TAggregateRoot DoGetItem(Expression<Func<TAggregateRoot, bool>> expression = null)
         {
-            return efContext.Context.Set<TAggregateRoot>().Where(expression).FirstOrDefault();
+            if (expression == null)
+            {
+                return efContext.Context.Set<TAggregateRoot>().FirstOrDefault();
+            }
+            else
+            {
+                return efContext.Context.Set<TAggregateRoot>().Where(expression).FirstOrDefault();
+            }
         }
 
-        protected override ICollection<TAggregateRoot> DoGetList(Expression<Func<TAggregateRoot, bool>> expression)
+        protected override ICollection<TAggregateRoot> DoGetList(Expression<Func<TAggregateRoot, bool>> expression = null)
         {
-            return efContext.Context.Set<TAggregateRoot>().Where(expression).ToList();
+            if (expression == null)
+            {
+                return efContext.Context.Set<TAggregateRoot>().ToList();
+            }
+            else
+            {
+                return efContext.Context.Set<TAggregateRoot>().Where(expression).ToList();
+            }
         }
     }
 }
