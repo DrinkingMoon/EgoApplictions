@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Ego.Domain.Model
 {
 
-    public class Dish : ModelRoot
+    public class Dish : AggregateRoot
     {
         public string Name { get; set; }
 

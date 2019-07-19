@@ -29,20 +29,20 @@ namespace Ego.Domain.Service
 
         public ICollection<Restaurant> GetList()
         {
-            return base.GetList();
+            return base.GetList().ToList();
         }
 
         public void SaveInfo(Restaurant model)
         {
-            Dish dish = model.Dishes.First();
-            dish.Comment = "11111111";
-            new DishRepository(Context).Save(dish);
+            //Dish dish = model.Dishes.First();
+            //dish.Comment = "11111111";
+            //new DishRepository(Context).Save(dish);
 
-            model.Dishes.Clear();
-            model.PhoneNumber = "1111111";
+            //model.Dishes.Clear();
+            //model.PhoneNumber = "1111111";
 
-            Save(model);
-            Context.Commit();
+            //Save(model);
+            //Context.Commit();
 
             //using (var ctx = new MVVMRepository())
             //{

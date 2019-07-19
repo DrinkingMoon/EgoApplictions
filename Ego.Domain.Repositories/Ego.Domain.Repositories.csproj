@@ -52,11 +52,10 @@
   <ItemGroup>
     <Compile Include="EntityFramework\RestaurantRepository.cs" />
     <Compile Include="EntityFramework\DishRepository.cs" />
-    <Compile Include="EntityFramework\EgoDbContext.cs" />
-    <Compile Include="EntityFramework\EntityFrameworkDbContext.cs" />
-    <Compile Include="EntityFramework\EntityFrameworkRepository.cs" />
-    <Compile Include="EntityFramework\EntityFrameworkRepositoryContext.cs" />
-    <Compile Include="EntityFramework\IEntityFrameworkRepositoryContext.cs" />
+    <Compile Include="EntityFramework\Common\EgoDbContext.cs" />
+    <Compile Include="EntityFramework\Common\EntityFrameworkDbContext.cs" />
+    <Compile Include="EntityFramework\Common\EntityFrameworkRepository.cs" />
+    <Compile Include="EntityFramework\Common\EntityFrameworkRepositoryContext.cs" />
     <Compile Include="EntityFramework\Mapping\DishMap.cs" />
     <Compile Include="EntityFramework\Mapping\RestaurantMap.cs" />
     <Compile Include="Migrations\201907190106233_Init.cs" />

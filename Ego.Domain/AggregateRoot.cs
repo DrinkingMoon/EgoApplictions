@@ -5,17 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ego.Domain.Model
+namespace Ego.Domain
 {
     /// <summary>
     /// 表示聚合根类型的基类型。
     /// </summary>
-    public abstract class ModelRoot : IAggregateRoot
+    public abstract class AggregateRoot : IAggregateRoot
     {
         protected Guid id;
 
         public event PropertyChangedEventHandler PropertyChanged;
-
 
         /// <summary>
         /// 确定指定的Object是否等于当前的Object。
@@ -54,11 +53,11 @@ namespace Ego.Domain.Model
             get { return id; }
             set { id = value; }
         }
-        public DateTime? S_CreateTime { get; set; }
-        public string S_CreateUser { get; set; }
-        public DateTime? S_UpdateTime { get; set; }
-        public string S_UpdateUser { get; set; }
-        public DateTime? S_DeleteTime { get; set; }
-        public string S_DeleteUser { get; set; }
+        //public DateTime? S_CreateTime { get; set; }
+        //public string S_CreateUser { get; set; }
+        //public DateTime? S_UpdateTime { get; set; }
+        //public string S_UpdateUser { get; set; }
+        //public DateTime? S_DeleteTime { get; set; }
+        //public string S_DeleteUser { get; set; }
     }
 }

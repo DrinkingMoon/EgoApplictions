@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ego.Domain.Repositories
+namespace Ego.Domain
 {
     public interface IRepositoryContext : Infrastructure.IUnitOfWork, IDisposable
     {

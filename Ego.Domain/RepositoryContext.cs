@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Ego.Domain.Repositories
+namespace Ego.Domain
 {
     /// <summary>
     /// Represents the base class for repository contexts.

@@ -4,7 +4,7 @@ using System.Threading;
 
 namespace Ego.Domain.Repositories.EntityFramework
 {
-    public class EntityFrameworkRepositoryContext : RepositoryContext, IEntityFrameworkRepositoryContext
+    public class EntityFrameworkRepositoryContext : RepositoryContext, IRepositoryContext
     {
         readonly ThreadLocal<EntityFrameworkDbContext> localCtx = new ThreadLocal<EntityFrameworkDbContext>();
 
