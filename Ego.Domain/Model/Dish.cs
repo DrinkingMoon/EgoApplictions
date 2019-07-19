@@ -15,10 +15,8 @@ namespace Ego.Domain.Model
 
         public string Comment { get; set; }
 
-
         public double? Score { get; set; }
 
-        public string FKID_Restaurant { get; set; }
 
         public virtual Restaurant Restaurant { get; set; }
     }

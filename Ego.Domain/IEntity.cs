@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Ego.Domain
 {
-    public interface IEntity
+    public interface IEntity : INotifyPropertyChanged
     {
-        Guid ID{ get; set; }
+        Guid ID { get; set; }
     }
 }

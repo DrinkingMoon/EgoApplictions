@@ -7,3 +7,12 @@ E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.csproj.CopyComplete
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.dll
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.pdb
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\Ego.Domain.dll
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\Ego.Domain.pdb
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\Ego.Infrastructure.dll
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\Ego.Infrastructure.pdb
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.csprojAssemblyReference.cache
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.csproj.CoreCompileInputs.cache
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.csproj.CopyComplete
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.dll
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.pdb
