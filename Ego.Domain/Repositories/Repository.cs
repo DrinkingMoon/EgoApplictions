@@ -18,12 +18,12 @@ namespace Ego.Domain.Repositories
         IRepositoryContext context;
         public IRepositoryContext Context { get => context; set => context = value; }
 
+
+
         public Repository(IRepositoryContext context)
         {
             this.context = context;
         }
-
-        #region Protected Methods
         protected abstract void DoAdd(TAggregateRoot aggregateRoot);
         protected abstract void DoRemove(TAggregateRoot aggregateRoot);
         protected abstract void DoUpdate(TAggregateRoot aggregateRoot);
@@ -31,11 +31,11 @@ namespace Ego.Domain.Repositories
         protected abstract bool DoExists(Guid key);
         protected abstract bool DoExists(TAggregateRoot aggregateRoot);
         protected abstract TAggregateRoot DoGetItem(Guid key);
-        protected abstract TAggregateRoot DoGetItem(Expression<Func<TAggregateRoot, bool>> expression);
-        protected abstract ICollection<TAggregateRoot> DoGetList(Expression<Func<TAggregateRoot, bool>> expression);
-        #endregion
+        protected abstract TAggregateRoot DoGetItem(Expression<Func<TAggregateRoot, bool>> expression = null);
+        protected abstract ICollection<TAggregateRoot> DoGetList(Expression<Func<TAggregateRoot, bool>> expression = null);
 
-        #region IRepository<TAggregateRoot> Members
+
+
         public void Add(TAggregateRoot aggregateRoot)
         {
             DoAdd(aggregateRoot);
@@ -58,28 +58,27 @@ namespace Ego.Domain.Repositories
 
         public bool Exists(Guid key)
         {
-            throw new NotImplementedException();
+           return DoExists(key);
         }
 
         public bool Exists(TAggregateRoot aggregateRoot)
         {
-            throw new NotImplementedException();
+            return DoExists(aggregateRoot);
         }
 
         public TAggregateRoot GetItem(Guid key)
         {
-            throw new NotImplementedException();
+            return DoGetItem(key);
         }
 
-        public TAggregateRoot GetItem(Expression<Func<TAggregateRoot, bool>> expression)
+        public TAggregateRoot GetItem(Expression<Func<TAggregateRoot, bool>> expression = null)
         {
-            throw new NotImplementedException();
+            return DoGetItem(expression);
         }
 
-        public ICollection<TAggregateRoot> GetList(Expression<Func<TAggregateRoot, bool>> expression)
+        public ICollection<TAggregateRoot> GetList(Expression<Func<TAggregateRoot, bool>> expression = null)
         {
-            throw new NotImplementedException();
+            return DoGetList(expression);
         }
-        #endregion
     }
 }

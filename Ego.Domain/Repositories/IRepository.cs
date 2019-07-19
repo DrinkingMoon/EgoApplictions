@@ -9,14 +9,11 @@ namespace Ego.Domain.Repositories
 {
     public interface IRepository<TAggregateRoot> where TAggregateRoot : class, IAggregateRoot
     {
-        #region Properties
         /// <summary>
         /// 获取当前仓储所使用的仓储上下文实例。
         /// </summary>
         IRepositoryContext Context { get; }
-        #endregion
 
-        #region Methods
         /// <summary>
         /// 将指定的聚合根添加到仓储中。
         /// </summary>
@@ -67,14 +64,13 @@ namespace Ego.Domain.Repositories
         /// </summary>
         /// <param name="expression">规约。</param>
         /// <returns>符合条件的聚合根。</returns>
-        TAggregateRoot GetItem(Expression<Func<TAggregateRoot, bool>> expression);
+        TAggregateRoot GetItem(Expression<Func<TAggregateRoot, bool>> expression =null);
 
         /// <summary>
         /// 根据指定的规约，从仓储中查找所有符合条件的聚合根。
         /// </summary>
         /// <param name="expression">规约。</param>
         /// <returns>所有符合条件的聚合根。</returns>
-        ICollection<TAggregateRoot> GetList(Expression<Func<TAggregateRoot, bool>> expression);
-        #endregion
+        ICollection<TAggregateRoot> GetList(Expression<Func<TAggregateRoot, bool>> expression = null);
     }
 }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ego.Service.Interface
+namespace Ego.Domain.Service.Interface
 {
     public interface IDataService<T>
     {

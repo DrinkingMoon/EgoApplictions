@@ -23,3 +23,16 @@ D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\EntityFra
 D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Console\obj\Debug\Ego.Console.csproj.CopyComplete
 D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Service.dll
 D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Service.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Domain.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Domain.Repositories.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Infrastructure.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Service.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\EntityFramework.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Domain.Repositories.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Domain.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Infrastructure.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Service.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\EntityFramework.xml
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\obj\Debug\Ego.Console.csproj.CopyComplete
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\EntityFramework.SqlServer.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\EntityFramework.SqlServer.xml

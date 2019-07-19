@@ -1,19 +1,25 @@
 ﻿
 using Ego.Domain.Model;
 using Ego.Domain.Repositories;
-using Ego.Service.Interface;
+using Ego.Domain.Service.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Ego.Domain.Repositories.EntityFramework;
 
-namespace Ego.Service
+namespace Ego.Domain.Service
 {
-    public class SqlDataService : Ego.Domain.Repositories.EntityFramework.RestaurantRepository, IDataService<Restaurant>
+    public class SqlDataService : RestaurantRepository, IDataService<Restaurant>
     {
         public SqlDataService(IRepositoryContext context) : base(context)
         {
+        }
+
+        public SqlDataService() : base(new EntityFrameworkRepositoryContext(new EgoDbContext()))
+        {
+
         }
 
         public Restaurant GetItem()
@@ -23,11 +29,18 @@ namespace Ego.Service
 
         public ICollection<Restaurant> GetList()
         {
-            return this.GetList();
+            return base.GetList();
         }
 
         public void SaveInfo(Restaurant model)
         {
+            Dish dish = model.Dishes.First();
+            dish.Comment = "11111111";
+            new DishRepository(Context).Save(dish);
+
+            model.Dishes.Clear();
+            model.PhoneNumber = "1111111";
+
             Save(model);
             Context.Commit();
 

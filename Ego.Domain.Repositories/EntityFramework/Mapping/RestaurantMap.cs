@@ -18,8 +18,6 @@ namespace Ego.Domain.Repositories.EntityFramework.Mapping
             Property(p => p.ID)
                 .IsRequired()
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-
-            
         }
     }
 }

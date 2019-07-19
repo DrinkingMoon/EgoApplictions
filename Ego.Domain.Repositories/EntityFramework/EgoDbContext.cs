@@ -12,7 +12,7 @@ namespace Ego.Domain.Repositories.EntityFramework
     {
         public EgoDbContext() : base("EgoDbContext")
         {
-            //Database.SetInitializer<DbContext>(null);
+            Database.SetInitializer<DbContext>(null);
             //Database.SetInitializer(new DropCreateDatabaseIfModelChanges<DataContext>());
 
             //this.Configuration.AutoDetectChangesEnabled = false;

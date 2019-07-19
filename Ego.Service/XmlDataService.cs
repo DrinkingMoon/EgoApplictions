@@ -1,5 +1,5 @@
 ﻿using Ego.Domain.Model;
-using Ego.Service.Interface;
+using Ego.Domain.Service.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace Ego.Service
+namespace Ego.Domain.Service
 {
     public class XmlDataService : IDataService<Restaurant>
     {
@@ -19,11 +19,13 @@ namespace Ego.Service
 
             foreach (var d in xd.Descendants("Dish"))
             {
-                Dish dish = new Dish();
-                dish.Name = d.Element("Name").Value;
-                dish.Category = d.Element("Category").Value;
-                dish.Comment = d.Element("Comment").Value;
-                dish.Score = double.Parse(d.Element("Score").Value);
+                Dish dish = new Dish
+                {
+                    Name = d.Element("Name").Value,
+                    Category = d.Element("Category").Value,
+                    Comment = d.Element("Comment").Value,
+                    Score = double.Parse(d.Element("Score").Value)
+                };
                 //添加到List集合
                 lstDish.Add(dish);
             }
@@ -41,8 +43,10 @@ namespace Ego.Service
 
         public ICollection<Restaurant> GetList()
         {
-            ICollection<Restaurant> result = new List<Restaurant>();
-            result.Add(GetItem());
+            ICollection<Restaurant> result = new List<Restaurant>
+            {
+                GetItem()
+            };
 
             return result;
         }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Ego.Domain.Model
 {
 
-    public class Dish : AggregateRoot
+    public class Dish : ModelRoot
     {
         public string Name { get; set; }
 
@@ -18,6 +18,7 @@ namespace Ego.Domain.Model
         public double? Score { get; set; }
 
 
+        public Guid? FK_Restaurant { get; set; }
         public virtual Restaurant Restaurant { get; set; }
     }
 }

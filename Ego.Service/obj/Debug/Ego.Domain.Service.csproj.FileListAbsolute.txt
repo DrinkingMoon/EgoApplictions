@@ -1,0 +1,16 @@
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Service\bin\Debug\Ego.Domain.Service.dll.config
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Service\bin\Debug\Ego.Domain.Service.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Service\bin\Debug\Ego.Domain.Service.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Service\bin\Debug\Ego.Domain.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Service\bin\Debug\Ego.Domain.Repositories.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Service\bin\Debug\Ego.Infrastructure.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Service\bin\Debug\EntityFramework.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Service\bin\Debug\Ego.Domain.Repositories.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Service\bin\Debug\Ego.Domain.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Service\bin\Debug\Ego.Infrastructure.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Service\bin\Debug\EntityFramework.xml
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Service\obj\Debug\Ego.Domain.Service.csprojAssemblyReference.cache
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Service\obj\Debug\Ego.Domain.Service.csproj.CoreCompileInputs.cache
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Service\obj\Debug\Ego.Domain.Service.csproj.CopyComplete
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Service\obj\Debug\Ego.Domain.Service.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Service\obj\Debug\Ego.Domain.Service.pdb

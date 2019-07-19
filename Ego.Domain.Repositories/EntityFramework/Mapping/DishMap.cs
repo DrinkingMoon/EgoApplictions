@@ -18,6 +18,8 @@ namespace Ego.Domain.Repositories.EntityFramework.Mapping
             Property(p => p.ID)
                 .IsRequired()
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+
+            HasOptional(a => a.Restaurant).WithMany(m => m.Dishes).HasForeignKey(f => f.FK_Restaurant).WillCascadeOnDelete(false);
         }
     }
 }
