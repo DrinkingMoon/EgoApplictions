@@ -1,16 +1,17 @@
 ﻿
+using Ego.Infrastructure;
 using System.Data.Entity;
 using System.Threading;
 
 namespace Ego.Domain.Repositories.EntityFramework
 {
-    public class EntityFrameworkRepositoryContext : RepositoryContext, IRepositoryContext
+    public class EntityFrameworkRepositoryContext : RepositoryContext, IEntityFrameworkRepositoryContext
     {
-        readonly ThreadLocal<EntityFrameworkDbContext> localCtx = new ThreadLocal<EntityFrameworkDbContext>();
+        readonly ThreadLocal<EgoDbContext> localCtx = new ThreadLocal<EgoDbContext>();
 
-        public EntityFrameworkRepositoryContext(EntityFrameworkDbContext entityFrameworkDbContext)
+        public EntityFrameworkRepositoryContext(EgoDbContext dbContext)
         {
-            localCtx = new ThreadLocal<EntityFrameworkDbContext>(() => { return entityFrameworkDbContext; });
+            localCtx = new ThreadLocal<EgoDbContext>(() => { return dbContext; });
         }
 
         public override void RegisterNew<TAggregateRoot>(TAggregateRoot obj)

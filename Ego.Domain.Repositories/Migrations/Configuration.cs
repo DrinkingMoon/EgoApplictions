@@ -1,11 +1,13 @@
 namespace Ego.Domain.Repositories.Migrations
 {
+    using Ego.Domain.Repositories.EntityFramework;
+    using Ego.Infrastructure;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Ego.Domain.Repositories.EntityFramework.EgoDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<EgoDbContext>
     {
         public Configuration()
         {
@@ -13,7 +15,7 @@ namespace Ego.Domain.Repositories.Migrations
             AutomaticMigrationDataLossAllowed = true;
         }
 
-        protected override void Seed(Ego.Domain.Repositories.EntityFramework.EgoDbContext context)
+        protected override void Seed(EgoDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

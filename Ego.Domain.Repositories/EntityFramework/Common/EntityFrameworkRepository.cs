@@ -136,7 +136,7 @@ namespace Ego.Domain.Repositories.EntityFramework
         protected override IEnumerable<TAggregateRoot> DoGetList(ISpecification<TAggregateRoot> specification = null, params Expression<Func<TAggregateRoot, dynamic>>[] eagerLoadingProperties)
         {
             var dbset = efContext.Context.Set<TAggregateRoot>();
-            IQueryable<TAggregateRoot> queryable = null;
+            IQueryable<TAggregateRoot> queryable;
             if (eagerLoadingProperties != null &&
                 eagerLoadingProperties.Length > 0)
             {

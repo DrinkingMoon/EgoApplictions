@@ -50,17 +50,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EntityFramework\RestaurantRepository.cs" />
-    <Compile Include="EntityFramework\DishRepository.cs" />
     <Compile Include="EntityFramework\Common\EgoDbContext.cs" />
-    <Compile Include="EntityFramework\Common\EntityFrameworkDbContext.cs" />
     <Compile Include="EntityFramework\Common\EntityFrameworkRepository.cs" />
     <Compile Include="EntityFramework\Common\EntityFrameworkRepositoryContext.cs" />
-    <Compile Include="EntityFramework\Mapping\DishMap.cs" />
-    <Compile Include="EntityFramework\Mapping\RestaurantMap.cs" />
-    <Compile Include="Migrations\201907190106233_Init.cs" />
-    <Compile Include="Migrations\201907190106233_Init.Designer.cs">
-      <DependentUpon>201907190106233_Init.cs</DependentUpon>
+    <Compile Include="EntityFramework\Common\IEntityFrameworkRepositoryContext.cs" />
+    <Compile Include="EntityFramework\Mapping\ProductTypeConfiguration.cs" />
+    <Compile Include="EntityFramework\Mapping\StorageTypeConfiguration.cs" />
+    <Compile Include="EntityFramework\ProductRepository.cs" />
+    <Compile Include="EntityFramework\InventoryRepository.cs" />
+    <Compile Include="EntityFramework\Mapping\InventoryTypeConfiguration.cs" />
+    <Compile Include="EntityFramework\StorageRepository.cs" />
+    <Compile Include="Migrations\201907220309398_init.cs" />
+    <Compile Include="Migrations\201907220309398_init.Designer.cs">
+      <DependentUpon>201907220309398_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -79,12 +81,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201907190106233_Init.resx">
-      <DependentUpon>201907190106233_Init.cs</DependentUpon>
-    </EmbeddedResource>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <EmbeddedResource Include="Migrations\201907220309398_init.resx">
+      <DependentUpon>201907220309398_init.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
