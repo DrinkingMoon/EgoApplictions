@@ -64,6 +64,7 @@
     <Compile Include="Repositories\IStorageRepository.cs" />
     <Compile Include="Repositories\Common\Repository.cs" />
     <Compile Include="Repositories\Common\RepositoryContext.cs" />
+    <Compile Include="Service\Test.cs" />
     <Compile Include="Specification\AndNotSpecification.cs" />
     <Compile Include="Specification\AndSpecification.cs" />
     <Compile Include="Specification\AnySpecification.cs" />

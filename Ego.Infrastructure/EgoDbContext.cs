@@ -31,7 +31,10 @@ namespace Ego.Infrastructure
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
-            var typesToRegister = Assembly.GetExecutingAssembly().GetTypes()
+            string assembleFileName = Assembly.GetExecutingAssembly().CodeBase.Replace("Ego.Infrastructure.DLL", "Ego.Domain.Repositories.DLL").Replace("file:///", "");
+            Assembly asm = Assembly.LoadFile(assembleFileName);
+
+            var typesToRegister = asm.GetTypes()
             .Where(type => !String.IsNullOrEmpty(type.Namespace))
             .Where(type => type.BaseType != null && type.BaseType.IsGenericType &&
                type.BaseType.GetGenericTypeDefinition() == typeof(EntityTypeConfiguration<>));

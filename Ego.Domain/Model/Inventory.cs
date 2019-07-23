@@ -28,9 +28,8 @@ namespace Ego.Domain.Model
 
 
         public Inventory() { }
-        public Inventory(string batchNo, Product product, Storage storage, decimal stockQty, DateTime entryTime)
+        public Inventory(Product product, string batchNo, decimal stockQty, Storage storage,  DateTime entryTime)
         {
-
             _entryTime = entryTime;
             _batchNo = batchNo;
             _stockQty = stockQty;

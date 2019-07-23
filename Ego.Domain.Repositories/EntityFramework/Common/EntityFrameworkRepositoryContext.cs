@@ -9,9 +9,9 @@ namespace Ego.Domain.Repositories.EntityFramework
     {
         readonly ThreadLocal<EgoDbContext> localCtx = new ThreadLocal<EgoDbContext>();
 
-        public EntityFrameworkRepositoryContext(EgoDbContext dbContext)
+        public EntityFrameworkRepositoryContext()
         {
-            localCtx = new ThreadLocal<EgoDbContext>(() => { return dbContext; });
+            localCtx = new ThreadLocal<EgoDbContext>(() => { return new EgoDbContext(); });
         }
 
         public override void RegisterNew<TAggregateRoot>(TAggregateRoot obj)

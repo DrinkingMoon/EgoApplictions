@@ -9,13 +9,18 @@ namespace Ego.Domain.Repositories.EntityFramework
     public class EntityFrameworkRepository<TAggregateRoot> : Repository<TAggregateRoot>
         where TAggregateRoot : class, IAggregateRoot
     {
-        private readonly EntityFrameworkRepositoryContext efContext;
+        private readonly IEntityFrameworkRepositoryContext efContext;
+
+        protected IEntityFrameworkRepositoryContext EFContext
+        {
+            get { return this.efContext; }
+        }
 
         public EntityFrameworkRepository(IRepositoryContext context)
             : base(context)
         {
-            if (context is EntityFrameworkRepositoryContext)
-                this.efContext = context as EntityFrameworkRepositoryContext;
+            if (context is IEntityFrameworkRepositoryContext)
+                this.efContext = context as IEntityFrameworkRepositoryContext;
         }
 
         private MemberExpression GetMemberInfo(LambdaExpression lambda)
@@ -48,11 +53,6 @@ namespace Ego.Domain.Repositories.EntityFramework
             var memberExpressionStr = memberExpression.ToString();
             var path = memberExpressionStr.Replace(parameterName + ".", "");
             return path;
-        }
-
-        protected EntityFrameworkRepositoryContext EFContext
-        {
-            get { return this.efContext; }
         }
 
         protected override void DoAdd(TAggregateRoot aggregateRoot)

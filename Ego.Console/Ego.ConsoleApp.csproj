@@ -67,14 +67,6 @@
       <Project>{6557cbd7-ea0b-4962-b418-b415924a0732}</Project>
       <Name>Ego.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Ego.Infrastructure\Ego.Infrastructure.csproj">
-      <Project>{6c651e9d-2385-4fa3-98bf-0c6255a875de}</Project>
-      <Name>Ego.Infrastructure</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Ego.Service\Ego.Domain.Service.csproj">
-      <Project>{311f51cd-6ae0-4e89-9a59-61b13b782ab5}</Project>
-      <Name>Ego.Domain.Service</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

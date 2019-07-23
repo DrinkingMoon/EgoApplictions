@@ -45,20 +45,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ego.Domain.Repositories\Ego.Domain.Repositories.csproj">
-      <Project>{38828b91-4293-4839-838b-7d69a887b7ce}</Project>
-      <Name>Ego.Domain.Repositories</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Ego.Domain\Ego.Domain.csproj">
-      <Project>{6557cbd7-ea0b-4962-b418-b415924a0732}</Project>
-      <Name>Ego.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Ego.Infrastructure\Ego.Infrastructure.csproj">
-      <Project>{6c651e9d-2385-4fa3-98bf-0c6255a875de}</Project>
-      <Name>Ego.Infrastructure</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
