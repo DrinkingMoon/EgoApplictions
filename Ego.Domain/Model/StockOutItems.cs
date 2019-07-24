@@ -1,19 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ego.Domain
+namespace Ego.Domain.Model
 {
-    /// <summary>
-    /// 表示聚合根类型的基类型。
-    /// </summary>
-    public abstract class AggregateRoot : IAggregateRoot
+    public class StockOutItems : IEntity
     {
-        protected Guid id;
+        Guid _id;
 
+        string _billNo;
+
+        Product _product;
+
+        Storage _storage;
+
+        decimal _operationCount;
+
+        string _batchNo;
+
+        StockInBill _stockInBill;
+
+        public StockOutItems()
+        {
+        }
+
+        public string BillNo { get => _billNo; set => _billNo = value; }
+        public virtual Product Product { get => _product; set => _product = value; }
+        public virtual Storage Storage { get => _storage; set => _storage = value; }
+        public decimal OperationCount { get => _operationCount; set => _operationCount = value; }
+        public string BatchNo { get => _batchNo; set => _batchNo = value; }
+        public Guid ID { get => _id; set => _id = value; }
+        public virtual StockInBill StockInBill { get => _stockInBill; set => _stockInBill = value; }
+
+        #region Public Methods
         /// <summary>
         /// 确定指定的Object是否等于当前的Object。
         /// </summary>
@@ -23,13 +44,13 @@ namespace Ego.Domain
         /// </remarks>
         public override bool Equals(object obj)
         {
-            if (obj == null)
-                return false;
             if (ReferenceEquals(this, obj))
                 return true;
-            if (!(obj is IAggregateRoot ar))
+            if (obj == null)
                 return false;
-            return this.id == ar.ID;
+            if (!(obj is StockInItems other))
+                return false;
+            return this.ID == other.ID;
         }
 
         /// <summary>
@@ -40,22 +61,8 @@ namespace Ego.Domain
         /// </remarks>
         public override int GetHashCode()
         {
-            return this.id.GetHashCode();
+            return this.ID.GetHashCode();
         }
-
-        /// <summary>
-        /// 获取当前领域实体类的全局唯一标识。
-        /// </summary>
-        public Guid ID
-        {
-            get { return id; }
-            set { id = value; }
-        }
-        //public DateTime? S_CreateTime { get; set; }
-        //public string S_CreateUser { get; set; }
-        //public DateTime? S_UpdateTime { get; set; }
-        //public string S_UpdateUser { get; set; }
-        //public DateTime? S_DeleteTime { get; set; }
-        //public string S_DeleteUser { get; set; }
+        #endregion
     }
 }

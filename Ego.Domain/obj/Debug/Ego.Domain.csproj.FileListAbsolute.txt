@@ -7,6 +7,8 @@ D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain
 D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.csproj.CopyComplete
 D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.dll
 D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.csprojAssemblyReference.cache
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.csproj.CoreCompileInputs.cache
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\Ego.Domain.dll
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\Ego.Domain.pdb
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\Ego.Infrastructure.dll
@@ -22,8 +24,6 @@ E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\Unity.Conf
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\Unity.Container.pdb
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\System.Threading.Tasks.Extensions.xml
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.csprojAssemblyReference.cache
-E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.csproj.CoreCompileInputs.cache
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.csproj.CopyComplete
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.dll
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.pdb

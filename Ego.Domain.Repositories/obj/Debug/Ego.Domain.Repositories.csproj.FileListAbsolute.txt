@@ -15,6 +15,7 @@ D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\obj\Deb
 D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\obj\Debug\Ego.Domain.Repositories.pdb
 D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\obj\Debug\Ego.Domain.Repositories.Migrations.Init.resources
 D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\obj\Debug\Ego.Domain.Repositories.csproj.GenerateResource.cache
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\obj\Debug\Ego.Domain.Repositories.csproj.CoreCompileInputs.cache
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\bin\Debug\Ego.Domain.Repositories.dll
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\bin\Debug\Ego.Domain.Repositories.pdb
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\bin\Debug\Ego.Domain.dll
@@ -37,9 +38,8 @@ E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\bin\Deb
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\bin\Debug\System.Threading.Tasks.Extensions.xml
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\obj\Debug\Ego.Domain.Repositories.csprojAssemblyReference.cache
-E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\obj\Debug\Ego.Domain.Repositories.Migrations.init.resources
-E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\obj\Debug\Ego.Domain.Repositories.csproj.GenerateResource.cache
-E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\obj\Debug\Ego.Domain.Repositories.csproj.CoreCompileInputs.cache
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\obj\Debug\Ego.Domain.Repositories.csproj.CopyComplete
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\obj\Debug\Ego.Domain.Repositories.dll
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\obj\Debug\Ego.Domain.Repositories.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\obj\Debug\Ego.Domain.Repositories.Migrations.init.resources
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\obj\Debug\Ego.Domain.Repositories.csproj.GenerateResource.cache

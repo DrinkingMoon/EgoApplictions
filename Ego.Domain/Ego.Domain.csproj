@@ -47,24 +47,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Events\IStockOperationEvent.cs" />
+    <Compile Include="Events\StockOperation.cs" />
     <Compile Include="Model\Common\IAggregateRoot.cs" />
     <Compile Include="Model\Common\AggregateRoot.cs" />
     <Compile Include="IEntity.cs" />
-    <Compile Include="Model\DetailItem.cs" />
+    <Compile Include="Model\StockInItems.cs" />
     <Compile Include="Model\Inventory.cs" />
-    <Compile Include="Model\OutdeliverList.cs" />
+    <Compile Include="Model\StockInBill.cs" />
     <Compile Include="Model\Product.cs" />
+    <Compile Include="Model\StockOutItems.cs" />
     <Compile Include="Model\Storage.cs" />
-    <Compile Include="Model\WarehousingList.cs" />
+    <Compile Include="Model\StockOutBill.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Common\IRepository.cs" />
     <Compile Include="Repositories\Common\IRepositoryContext.cs" />
+    <Compile Include="Repositories\IStockInBillRepository.cs" />
     <Compile Include="Repositories\IInventoryRepository.cs" />
     <Compile Include="Repositories\IProductRepository.cs" />
     <Compile Include="Repositories\IStorageRepository.cs" />
     <Compile Include="Repositories\Common\Repository.cs" />
     <Compile Include="Repositories\Common\RepositoryContext.cs" />
-    <Compile Include="Service\Test.cs" />
+    <Compile Include="Service\DomainService.cs" />
+    <Compile Include="Service\IDomainService.cs" />
     <Compile Include="Specification\AndNotSpecification.cs" />
     <Compile Include="Specification\AndSpecification.cs" />
     <Compile Include="Specification\AnySpecification.cs" />

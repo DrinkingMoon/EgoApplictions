@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ego.Domain
+namespace Ego.Domain.Service
 {
-    public interface IEntity 
+    public interface IDomainService
     {
-        Guid ID { get; set; }
+        void StockOperation(Ego.Domain.Model.Inventory inventory);
     }
 }

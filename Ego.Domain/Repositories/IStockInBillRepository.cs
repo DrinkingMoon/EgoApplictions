@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 
 namespace Ego.Domain.Repositories
 {
-    public interface IInventoryRepository : IRepository<Inventory>
+    public interface IStockInBillRepository : IRepository<StockInBill>
     {
-        Inventory FindItem(Product product, string batchNo, Storage storage);
     }
 }

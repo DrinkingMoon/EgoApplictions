@@ -37,5 +37,15 @@ namespace Ego.Domain.Model
             _product = product;
             _storage = storage;
         }
+
+        public Inventory CreateNew()
+        {
+            return new Inventory(this.Product, this.BatchNo, this.StockQty, this.Storage, DateTime.Now);
+        }
+
+        public void OperationStockQty(decimal operationCount)
+        {
+            this.StockQty += operationCount;
+        }
     }
 }

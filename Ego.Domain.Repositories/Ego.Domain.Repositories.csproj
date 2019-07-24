@@ -54,15 +54,19 @@
     <Compile Include="EntityFramework\Common\EntityFrameworkRepository.cs" />
     <Compile Include="EntityFramework\Common\EntityFrameworkRepositoryContext.cs" />
     <Compile Include="EntityFramework\Common\IEntityFrameworkRepositoryContext.cs" />
+    <Compile Include="EntityFramework\StockInBillRepository.cs" />
+    <Compile Include="EntityFramework\Mapping\StockInItemsTypeConfiguration.cs" />
+    <Compile Include="EntityFramework\Mapping\InventoryTypeConfiguration.cs" />
+    <Compile Include="EntityFramework\Mapping\StockInBillTypeConfiguration.cs" />
     <Compile Include="EntityFramework\Mapping\ProductTypeConfiguration.cs" />
     <Compile Include="EntityFramework\Mapping\StorageTypeConfiguration.cs" />
+    <Compile Include="EntityFramework\Mapping\StockOutBillTypeConfiguration.cs" />
     <Compile Include="EntityFramework\ProductRepository.cs" />
     <Compile Include="EntityFramework\InventoryRepository.cs" />
-    <Compile Include="EntityFramework\Mapping\InventoryTypeConfiguration.cs" />
     <Compile Include="EntityFramework\StorageRepository.cs" />
-    <Compile Include="Migrations\201907220309398_init.cs" />
-    <Compile Include="Migrations\201907220309398_init.Designer.cs">
-      <DependentUpon>201907220309398_init.cs</DependentUpon>
+    <Compile Include="Migrations\201907240630492_init.cs" />
+    <Compile Include="Migrations\201907240630492_init.Designer.cs">
+      <DependentUpon>201907240630492_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,8 +88,8 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201907220309398_init.resx">
-      <DependentUpon>201907220309398_init.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201907240630492_init.resx">
+      <DependentUpon>201907240630492_init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
