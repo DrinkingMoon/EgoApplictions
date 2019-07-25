@@ -19,12 +19,12 @@ namespace Ego.Domain.Model
 
         string _createUser;
 
-        ICollection<StockInItems> _detailItems;
+        ICollection<StockInItem> _stockInItems;
 
         public string BillNo { get => _billNo; set => _billNo = value; }
         public string CreateTime { get => _createTime; set => _createTime = value; }
         public string CreateUser { get => _createUser; set => _createUser = value; }
-        public virtual ICollection<StockInItems> DetailItems { get => _detailItems; set => _detailItems = value; }
+        public virtual ICollection<StockInItem> StockInItems { get => _stockInItems; set => _stockInItems = value; }
         public string BillStatus { get => _billStatus; set => _billStatus = value; }
         public DateTime? AffirmDate { get => _affirmDate; set => _affirmDate = value; }
 

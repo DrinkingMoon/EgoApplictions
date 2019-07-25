@@ -15,11 +15,11 @@ namespace Ego.Domain.Model
 
         string _createUser;
 
-        ICollection<StockInItems> _detailItems;
+        ICollection<StockInItem> _detailItems;
 
         public string BillNo { get => _billNo; set => _billNo = value; }
         public string CreateTime { get => _createTime; set => _createTime = value; }
         public string CreateUser { get => _createUser; set => _createUser = value; }
-        public virtual ICollection<StockInItems> DetailItems { get => _detailItems; set => _detailItems = value; }
+        public virtual ICollection<StockInItem> DetailItems { get => _detailItems; set => _detailItems = value; }
     }
 }

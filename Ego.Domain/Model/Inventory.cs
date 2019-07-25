@@ -40,7 +40,7 @@ namespace Ego.Domain.Model
 
         public Inventory CreateNew()
         {
-            return new Inventory(this.Product, this.BatchNo, this.StockQty, this.Storage, DateTime.Now);
+            return new Inventory(this.Product, this.BatchNo, this.StockQty, this.Storage, this.EntryTime);
         }
 
         public void OperationStockQty(decimal operationCount)

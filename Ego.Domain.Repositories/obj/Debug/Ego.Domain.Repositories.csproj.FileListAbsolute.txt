@@ -41,5 +41,5 @@ E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\obj\Deb
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\obj\Debug\Ego.Domain.Repositories.csproj.CopyComplete
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\obj\Debug\Ego.Domain.Repositories.dll
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\obj\Debug\Ego.Domain.Repositories.pdb
-E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\obj\Debug\Ego.Domain.Repositories.Migrations.init.resources
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\obj\Debug\Ego.Domain.Repositories.Migrations.Init.resources
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain.Repositories\obj\Debug\Ego.Domain.Repositories.csproj.GenerateResource.cache

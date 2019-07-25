@@ -48,3 +48,5 @@ E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\obj\Debug\Ego.Conso
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\obj\Debug\Ego.ConsoleApp.csproj.CopyComplete
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\obj\Debug\Ego.ConsoleApp.exe
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\obj\Debug\Ego.ConsoleApp.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Application.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Application.pdb

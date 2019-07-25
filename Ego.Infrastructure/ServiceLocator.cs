@@ -51,11 +51,11 @@ namespace Ego.Infrastructure
         #endregion
 
         #region Private Methods
-        private IEnumerable<ParameterOverride> GetParameterOverrides(Dictionary<string, object> dic)
+        private IEnumerable<ParameterOverride> GetParameterOverrides(params KeyValuePair<string,object>[] keyValuePairs)
         {
             List<ParameterOverride> overrides = new List<ParameterOverride>();
 
-            foreach (KeyValuePair<string, object> item in dic)
+            foreach (KeyValuePair<string, object> item in keyValuePairs)
             {
                 overrides.Add(new ParameterOverride(item.Key, item.Value));
             }
@@ -85,9 +85,9 @@ namespace Ego.Infrastructure
         /// <typeparam name="T">The type of the service.</typeparam>
         /// <param name="overridedArguments">The overrided arguments.</param>
         /// <returns>The service instance.</returns>
-        public T GetService<T>(Dictionary<string, object> dic)
+        public T GetService<T>(params KeyValuePair<string, object>[] keyValuePairs)
         {
-            return container.Resolve<T>(GetParameterOverrides(dic).ToArray());
+            return container.Resolve<T>(GetParameterOverrides(keyValuePairs).ToArray());
         }
         /// <summary>
         /// Gets the service instance with the given type by using the overrided arguments.
@@ -95,9 +95,9 @@ namespace Ego.Infrastructure
         /// <param name="serviceType">The type of the service.</param>
         /// <param name="overridedArguments">The overrided arguments.</param>
         /// <returns>The service instance.</returns>
-        public object GetService(Type serviceType, Dictionary<string, object> dic)
+        public object GetService(Type serviceType, params KeyValuePair<string, object>[] keyValuePairs)
         {
-            return container.Resolve(serviceType, GetParameterOverrides(dic).ToArray());
+            return container.Resolve(serviceType, GetParameterOverrides(keyValuePairs).ToArray());
         }
         #endregion
 
