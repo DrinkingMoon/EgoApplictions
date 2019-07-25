@@ -22,3 +22,17 @@ E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\obj\Debug\Eg
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\obj\Debug\Ego.Infrastructure.csproj.CopyComplete
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\obj\Debug\Ego.Infrastructure.dll
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\obj\Debug\Ego.Infrastructure.pdb
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\bin\Debug\Ego.Infrastructure.dll.config
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\bin\Debug\Unity.Abstractions.dll
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\bin\Debug\Unity.Configuration.dll
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\bin\Debug\Unity.Container.dll
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\bin\Debug\Unity.Interception.dll
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\bin\Debug\Unity.Abstractions.pdb
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\bin\Debug\Unity.Configuration.pdb
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\bin\Debug\Unity.Container.pdb
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\bin\Debug\Unity.Interception.pdb
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\obj\Debug\Ego.Infrastructure.csproj.CopyComplete

@@ -15,7 +15,7 @@ namespace Ego.Infrastructure
     public sealed class ServiceLocator : IServiceProvider
     {
         #region Private Fields
-        private readonly IUnityContainer container;
+        private readonly IUnityContainer _container;
         #endregion
 
         #region Private Static Fields
@@ -34,8 +34,8 @@ namespace Ego.Infrastructure
             Configuration configuration = ConfigurationManager.OpenMappedExeConfiguration(fileMap, ConfigurationUserLevel.None);
 
             var unitySection = (UnityConfigurationSection)configuration.GetSection("unity");
-            container = new UnityContainer();
-            unitySection.Configure(container);
+            _container = new UnityContainer();
+            unitySection.Configure(_container);
 
         }
         #endregion
@@ -65,39 +65,25 @@ namespace Ego.Infrastructure
         #endregion
 
         #region Public Methods
-        /// <summary>
-        /// Gets the service instance with the given type.
-        /// </summary>
-        /// <typeparam name="T">The type of the service.</typeparam>
-        /// <returns>The service instance.</returns>
         public T GetService<T>()
         {
-            return container.Resolve<T>();
+            return _container.Resolve<T>();
         }
-
-        public IEnumerable<T> ResolveAll<T>()
+        public T GetService<T>(string name)
         {
-            return container.ResolveAll<T>();
+            return _container.Resolve<T>(name, null);
         }
-        /// <summary>
-        /// Gets the service instance with the given type by using the overrided arguments.
-        /// </summary>
-        /// <typeparam name="T">The type of the service.</typeparam>
-        /// <param name="overridedArguments">The overrided arguments.</param>
-        /// <returns>The service instance.</returns>
         public T GetService<T>(params KeyValuePair<string, object>[] keyValuePairs)
         {
-            return container.Resolve<T>(GetParameterOverrides(keyValuePairs).ToArray());
+            return _container.Resolve<T>(GetParameterOverrides(keyValuePairs).ToArray());
         }
-        /// <summary>
-        /// Gets the service instance with the given type by using the overrided arguments.
-        /// </summary>
-        /// <param name="serviceType">The type of the service.</param>
-        /// <param name="overridedArguments">The overrided arguments.</param>
-        /// <returns>The service instance.</returns>
-        public object GetService(Type serviceType, params KeyValuePair<string, object>[] keyValuePairs)
+        public T GetService<T>(string name = null, params KeyValuePair<string, object>[] keyValuePairs)
         {
-            return container.Resolve(serviceType, GetParameterOverrides(keyValuePairs).ToArray());
+            return _container.Resolve<T>(name, GetParameterOverrides(keyValuePairs).ToArray());
+        }
+        public IEnumerable<T> ResolveAll<T>()
+        {
+            return _container.ResolveAll<T>();
         }
         #endregion
 
@@ -109,7 +95,7 @@ namespace Ego.Infrastructure
         /// <returns>The service instance.</returns>
         public object GetService(Type serviceType)
         {
-            return container.Resolve(serviceType);
+            return _container.Resolve(serviceType);
         }
 
         #endregion

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Ego.Domain.Repositories.EntityFramework
 {
-    public class RepInventory : EntityFrameworkRepository<Inventory>, IRepInventory
+    public class RepInventory : RepositoryEntityFramework<Inventory>, IRepInventory
     {
         public RepInventory(IContext ctx) : base(ctx)
         {

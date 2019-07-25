@@ -10,6 +10,8 @@ namespace Ego.Application
 {
     public class RepositoryFactory
     {
+        static IContext _context;
+
         public static IRepository Repository<AggregateRoot, IRepository>(IContext ctx)
             where IRepository : Ego.Domain.IRepository<AggregateRoot>
             where AggregateRoot : Ego.Domain.AggregateRoot
@@ -21,12 +23,19 @@ namespace Ego.Application
             where IRepository : Ego.Domain.IRepository<AggregateRoot>
             where AggregateRoot : Ego.Domain.AggregateRoot
         {
-            return ServiceLocator.Instance.GetService<IRepository>(new KeyValuePair<string, object>("ctx", Context()));
+            return ServiceLocator.Instance.GetService<IRepository>(new KeyValuePair<string, object>("ctx", _context));
         }
 
-        public static IContext Context()
+        public static IContext DbContext(string name)
         {
-            return ServiceLocator.Instance.GetService<IContext>();
+            _context = ServiceLocator.Instance.GetService<IContext>(name);
+            return _context;
+        }
+
+        public static IContext EFDbContextEgo()
+        {
+            _context = ServiceLocator.Instance.GetService<IContext>("EFDbContextEgo");
+            return _context;
         }
     }
 }

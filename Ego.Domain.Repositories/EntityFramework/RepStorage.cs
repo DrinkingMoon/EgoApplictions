@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Ego.Domain.Repositories.EntityFramework
 {
-    public class RepStorage : EntityFrameworkRepository<Storage>, IRepStorage
+    public class RepStorage : RepositoryEntityFramework<Storage>, IRepStorage
     {
         public RepStorage(IContext ctx) : base(ctx)
         {

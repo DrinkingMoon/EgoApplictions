@@ -74,7 +74,7 @@
     <Compile Include="Repositories\IRepProduct.cs" />
     <Compile Include="Repositories\IRepStorage.cs" />
     <Compile Include="Repository.cs" />
-    <Compile Include="RepositoryContext.cs" />
+    <Compile Include="Context.cs" />
     <Compile Include="Service\ServiceDomain.cs" />
     <Compile Include="Service\IServiceDomain.cs" />
     <Compile Include="Specification\AndNotSpecification.cs" />

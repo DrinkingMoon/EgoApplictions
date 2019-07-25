@@ -27,3 +27,14 @@ E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\System.Run
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.csproj.CopyComplete
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.dll
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Domain\obj\Debug\Ego.Domain.pdb
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\Unity.Abstractions.dll
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\Unity.Configuration.dll
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\Unity.Container.dll
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\Ego.Infrastructure.dll.config
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\Unity.Abstractions.pdb
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\Unity.Configuration.pdb
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\Unity.Container.pdb
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Domain\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml

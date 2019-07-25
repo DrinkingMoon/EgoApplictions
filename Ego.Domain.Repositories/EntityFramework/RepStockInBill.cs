@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Ego.Domain.Repositories.EntityFramework
 {
-    public class RepStockInBill : EntityFrameworkRepository<StockInBill>, IRepStockInBill
+    public class RepStockInBill : RepositoryEntityFramework<StockInBill>, IRepStockInBill
     {
         public RepStockInBill(IContext ctx) : base(ctx)
         {

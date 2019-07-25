@@ -41,7 +41,6 @@
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,31 +49,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EntityFramework\EgoDbContext.cs" />
-    <Compile Include="EntityFramework\EntityFrameworkRepository.cs" />
-    <Compile Include="EntityFramework\EntityFrameworkRepositoryContext.cs" />
-    <Compile Include="EntityFramework\IEntityFrameworkRepositoryContext.cs" />
+    <Compile Include="EntityFramework\RepositoryEntityFramework.cs" />
+    <Compile Include="EntityFramework\IContextEntityFramework.cs" />
     <Compile Include="EntityFramework\RepStockInBill.cs" />
-    <Compile Include="EntityFramework\Mapping\MapStockInItems.cs" />
-    <Compile Include="EntityFramework\Mapping\MapInventory.cs" />
-    <Compile Include="EntityFramework\Mapping\MapStockInBill.cs" />
-    <Compile Include="EntityFramework\Mapping\MapProduct.cs" />
-    <Compile Include="EntityFramework\Mapping\MapStorage.cs" />
-    <Compile Include="EntityFramework\Mapping\MapStockOutBill.cs" />
     <Compile Include="EntityFramework\RepProduct.cs" />
     <Compile Include="EntityFramework\RepInventory.cs" />
     <Compile Include="EntityFramework\RepStorage.cs" />
-    <Compile Include="Migrations\201907250729297_Init.cs" />
-    <Compile Include="Migrations\201907250729297_Init.Designer.cs">
-      <DependentUpon>201907250729297_Init.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Specifications\SpecificationInventoryFromEntity.cs" />
     <Compile Include="Specifications\SpecificationStockInBillFromBillNo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ego.Domain\Ego.Domain.csproj">
@@ -90,9 +73,7 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201907250729297_Init.resx">
-      <DependentUpon>201907250729297_Init.cs</DependentUpon>
-    </EmbeddedResource>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

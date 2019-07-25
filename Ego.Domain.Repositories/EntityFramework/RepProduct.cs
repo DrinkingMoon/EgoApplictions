@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Ego.Domain.Repositories.EntityFramework
 {
-    public class RepProduct : EntityFrameworkRepository<Product>, IRepProduct
+    public class RepProduct : RepositoryEntityFramework<Product>, IRepProduct
     {
         public RepProduct(IContext ctx) : base(ctx)
         {
