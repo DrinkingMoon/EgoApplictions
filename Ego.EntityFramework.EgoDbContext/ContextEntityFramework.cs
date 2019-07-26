@@ -8,11 +8,11 @@ namespace Ego.Domain.Repositories.EFDbContextEgo
 {
     public class ContextEntityFramework : Context, IContextEntityFramework
     {
-        readonly ThreadLocal<EgoDbContext> localCtx = new ThreadLocal<EgoDbContext>();
+        readonly ThreadLocal<InstanceDbContext> localCtx = new ThreadLocal<InstanceDbContext>();
 
         public ContextEntityFramework()
         {
-            localCtx = new ThreadLocal<EgoDbContext>(() => { return new EgoDbContext(); });
+            localCtx = new ThreadLocal<InstanceDbContext>(() => { return new InstanceDbContext(); });
         }
 
         public override void RegisterNew<TAggregateRoot>(TAggregateRoot obj)

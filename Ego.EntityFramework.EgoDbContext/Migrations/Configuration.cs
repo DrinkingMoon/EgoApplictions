@@ -7,7 +7,7 @@ namespace Ego.Domain.Repositories.EFDbContextEgo.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<EgoDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<InstanceDbContext>
     {
         public Configuration()
         {
@@ -15,7 +15,7 @@ namespace Ego.Domain.Repositories.EFDbContextEgo.Migrations
             AutomaticMigrationDataLossAllowed = true;
         }
 
-        protected override void Seed(EgoDbContext context)
+        protected override void Seed(InstanceDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

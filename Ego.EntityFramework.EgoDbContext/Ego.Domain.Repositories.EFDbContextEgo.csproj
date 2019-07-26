@@ -49,13 +49,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ContextEntityFramework.cs" />
-    <Compile Include="EgoDbContext.cs" />
+    <Compile Include="InstanceDbContext.cs" />
     <Compile Include="Mapping\MapInventory.cs" />
     <Compile Include="Mapping\MapProduct.cs" />
     <Compile Include="Mapping\MapStockInBill.cs" />
     <Compile Include="Mapping\MapStockInItems.cs" />
     <Compile Include="Mapping\MapStockOutBill.cs" />
     <Compile Include="Mapping\MapStorage.cs" />
+    <Compile Include="Migrations\201907260138112_Init.cs" />
+    <Compile Include="Migrations\201907260138112_Init.Designer.cs">
+      <DependentUpon>201907260138112_Init.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -76,6 +80,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201907260138112_Init.resx">
+      <DependentUpon>201907260138112_Init.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

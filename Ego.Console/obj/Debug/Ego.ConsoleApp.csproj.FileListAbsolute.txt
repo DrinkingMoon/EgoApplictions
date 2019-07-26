@@ -60,3 +60,9 @@ D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Unity.Con
 D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Unity.Container.pdb
 D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Domain.Repositories.EFDbContextEgo.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Domain.Repositories.EFDbContextUser.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Domain.Repositories.EFDbContextUser.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Domain.Repositories.EFDbContextUser.dll.config
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Domain.Repositories.EFDbContextEgo.pdb
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Console\bin\Debug\Ego.Domain.Repositories.EFDbContextEgo.dll.config

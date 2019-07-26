@@ -46,6 +46,7 @@
     <Compile Include="RepositoryFactory.cs" />
     <Compile Include="StockInBillApp.cs" />
     <Compile Include="StorageApp.cs" />
+    <Compile Include="UserApp.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ego.Domain\Ego.Domain.csproj">

@@ -20,10 +20,10 @@ namespace Ego.Application
 
         public StorageApp()
         {
-            _context = ServiceLocator.Instance.GetService<IContext>();
+            _context = ServiceLocator.Instance.GetService<IContext>("EFDbContextEgo");
 
             _rep_Storage = ServiceLocator.Instance.GetService<IRepStorage>
-                (new KeyValuePair<string, object>("ctx", _context));
+                (new KeyValuePair<string, object>("context", _context));
 
             _event_Storage = new Ego.Domain.Events.EventStorage(_context, _rep_Storage);
 

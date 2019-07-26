@@ -9,7 +9,7 @@ namespace Ego.Domain.Repositories.EntityFramework
 {
     public class RepStockInBill : RepositoryEntityFramework<StockInBill>, IRepStockInBill
     {
-        public RepStockInBill(IContext ctx) : base(ctx)
+        public RepStockInBill(IContext context) : base(context)
         {
 
         }

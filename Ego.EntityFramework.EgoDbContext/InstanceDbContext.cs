@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace Ego.Domain.Repositories.EFDbContextEgo
 {
-    internal class EgoDbContext : DbContext
+    internal class InstanceDbContext : DbContext
     {
-        public EgoDbContext() : base("EgoDbContext")
+        public InstanceDbContext() : base("EgoDbContext")
         {
-            Database.SetInitializer<EgoDbContext>(null);
+            Database.SetInitializer<InstanceDbContext>(null);
             //Database.SetInitializer(new DropCreateDatabaseIfModelChanges<DataContext>());
 
             //this.Configuration.AutoDetectChangesEnabled = false;

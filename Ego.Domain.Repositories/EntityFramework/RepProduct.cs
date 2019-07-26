@@ -9,7 +9,7 @@ namespace Ego.Domain.Repositories.EntityFramework
 {
     public class RepProduct : RepositoryEntityFramework<Product>, IRepProduct
     {
-        public RepProduct(IContext ctx) : base(ctx)
+        public RepProduct(IContext context) : base(context)
         {
 
         }

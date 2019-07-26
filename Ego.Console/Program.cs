@@ -17,7 +17,9 @@ namespace Ego.ConsoleApp
 
             ProductApp productApp = new ProductApp();
             productApp.Save(new Product() { Code = "P1", Name = "肥皂", Spec = "日式" , Producttype = "1日1用1品1" });
-            
+
+            UserApp userApp = new UserApp();
+            userApp.Save(new User() { Name = "张三", Age = 28, Department = "车间", WorkID = "0001" });
         }
     }
 }

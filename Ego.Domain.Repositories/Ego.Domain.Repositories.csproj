@@ -55,6 +55,7 @@
     <Compile Include="EntityFramework\RepProduct.cs" />
     <Compile Include="EntityFramework\RepInventory.cs" />
     <Compile Include="EntityFramework\RepStorage.cs" />
+    <Compile Include="EntityFramework\RepUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Specifications\SpecificationInventoryFromEntity.cs" />
     <Compile Include="Specifications\SpecificationStockInBillFromBillNo.cs" />

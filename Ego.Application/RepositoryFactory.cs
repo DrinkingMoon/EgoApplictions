@@ -16,14 +16,14 @@ namespace Ego.Application
             where IRepository : Ego.Domain.IRepository<AggregateRoot>
             where AggregateRoot : Ego.Domain.AggregateRoot
         {
-            return ServiceLocator.Instance.GetService<IRepository>(new KeyValuePair<string, object>("ctx", ctx));
+            return ServiceLocator.Instance.GetService<IRepository>(new KeyValuePair<string, object>("context", ctx));
         }
 
         public static IRepository Repository<AggregateRoot, IRepository>()
             where IRepository : Ego.Domain.IRepository<AggregateRoot>
             where AggregateRoot : Ego.Domain.AggregateRoot
         {
-            return ServiceLocator.Instance.GetService<IRepository>(new KeyValuePair<string, object>("ctx", _context));
+            return ServiceLocator.Instance.GetService<IRepository>(new KeyValuePair<string, object>("context", _context));
         }
 
         public static IContext DbContext(string name)
@@ -35,6 +35,11 @@ namespace Ego.Application
         public static IContext EFDbContextEgo()
         {
             _context = ServiceLocator.Instance.GetService<IContext>("EFDbContextEgo");
+            return _context;
+        }
+        public static IContext EFDbContextUser()
+        {
+            _context = ServiceLocator.Instance.GetService<IContext>("EFDbContextUser");
             return _context;
         }
     }

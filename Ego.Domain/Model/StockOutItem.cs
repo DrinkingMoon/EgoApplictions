@@ -24,6 +24,7 @@ namespace Ego.Domain.Model
 
         public StockOutItem()
         {
+
         }
 
         public string BillNo { get => _billNo; set => _billNo = value; }

@@ -9,7 +9,7 @@ namespace Ego.Domain.Repositories.EntityFramework
 {
     public class RepStorage : RepositoryEntityFramework<Storage>, IRepStorage
     {
-        public RepStorage(IContext ctx) : base(ctx)
+        public RepStorage(IContext context) : base(context)
         {
 
         }

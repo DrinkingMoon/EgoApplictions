@@ -9,17 +9,15 @@ namespace Ego.Domain.Model
 {
     public class Storage : AggregateRoot
     {
-        public string Name { get; set; }
+        string _name;
 
-        //string _name;
+        public string Name { get => _name; set => _name = value; }
 
-        //public string Name { get => _name; set => _name = value; }
+        public Storage() { }
 
-        //public Storage() { }
-
-        //public Storage(string name)
-        //{
-        //    _name = name;
-        //}
+        public Storage(string name)
+        {
+            _name = name;
+        }
     }
 }
