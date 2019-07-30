@@ -15,8 +15,8 @@ namespace Ego.Application
     public class ProductApp
     {
         static readonly IContext _context = RepositoryFactory.EFDbContextEgo();
-        static readonly IRepProduct _rep_Product = RepositoryFactory.Repository<Product, IRepProduct>(_context);
-        static readonly IEventProduct _event_Product = new Ego.Domain.Events.EventProduct(_context, _rep_Product);
+        static readonly IProductRepository _rep_Product = RepositoryFactory.Repository<Product, IProductRepository>(_context);
+        static readonly IProductEvent _event_Product = new Ego.Domain.Events.ProductEvent(_context, _rep_Product);
 
         public ProductApp()
         {

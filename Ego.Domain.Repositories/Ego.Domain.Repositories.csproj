@@ -51,14 +51,15 @@
   <ItemGroup>
     <Compile Include="EntityFramework\RepositoryEntityFramework.cs" />
     <Compile Include="EntityFramework\IContextEntityFramework.cs" />
-    <Compile Include="EntityFramework\RepStockInBill.cs" />
-    <Compile Include="EntityFramework\RepProduct.cs" />
-    <Compile Include="EntityFramework\RepInventory.cs" />
-    <Compile Include="EntityFramework\RepStorage.cs" />
-    <Compile Include="EntityFramework\RepUser.cs" />
+    <Compile Include="EntityFramework\StockInBillRepository.cs" />
+    <Compile Include="EntityFramework\ProductRepository.cs" />
+    <Compile Include="EntityFramework\InventoryRepository.cs" />
+    <Compile Include="EntityFramework\StorageRepository.cs" />
+    <Compile Include="EntityFramework\RestaurantRepository.cs" />
+    <Compile Include="EntityFramework\UserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Specifications\SpecificationInventoryFromEntity.cs" />
-    <Compile Include="Specifications\SpecificationStockInBillFromBillNo.cs" />
+    <Compile Include="Specifications\InventoryFromEntitySpecification.cs" />
+    <Compile Include="Specifications\StockInBillFromBillNoSpecification.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ego.Domain\Ego.Domain.csproj">

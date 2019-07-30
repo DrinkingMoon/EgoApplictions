@@ -83,7 +83,7 @@ namespace Ego.Domain.Repositories.EntityFramework
                 return;
             }
 
-            RemoveHoldingEntityInContext(aggregateRoot);
+            //RemoveHoldingEntityInContext(aggregateRoot);
             efContext.RegisterDeleted<TAggregateRoot>(aggregateRoot);
         }
 
@@ -94,7 +94,7 @@ namespace Ego.Domain.Repositories.EntityFramework
                 return;
             }
 
-            RemoveHoldingEntityInContext(aggregateRoot);
+            //RemoveHoldingEntityInContext(aggregateRoot);
             efContext.RegisterModified<TAggregateRoot>(aggregateRoot);
         }
 
@@ -117,7 +117,14 @@ namespace Ego.Domain.Repositories.EntityFramework
 
         protected override TAggregateRoot DoGetItem(ISpecification<TAggregateRoot> specification = null)
         {
-            return efContext.Context.Set<TAggregateRoot>().Where(specification.IsSatisfiedBy).FirstOrDefault();
+            if (specification == null)
+            {
+                return efContext.Context.Set<TAggregateRoot>().FirstOrDefault();
+            }
+            else
+            {
+                return efContext.Context.Set<TAggregateRoot>().Where(specification.IsSatisfiedBy).FirstOrDefault();
+            }
         }
 
         protected override TAggregateRoot DoGetItem(ISpecification<TAggregateRoot> specification = null, params Expression<Func<TAggregateRoot, dynamic>>[] eagerLoadingProperties)
@@ -143,10 +150,14 @@ namespace Ego.Domain.Repositories.EntityFramework
 
         protected override IEnumerable<TAggregateRoot> DoGetList(ISpecification<TAggregateRoot> specification = null)
         {
-            var query = efContext.Context.Set<TAggregateRoot>()
-                .Where(specification.GetExpression());
-
-            return query.ToList();
+            if (specification == null)
+            {
+                return efContext.Context.Set<TAggregateRoot>().ToList();
+            }
+            else
+            {
+                return efContext.Context.Set<TAggregateRoot>().Where(specification.GetExpression()).ToList();
+            }
         }
 
         protected override IEnumerable<TAggregateRoot> DoGetList(ISpecification<TAggregateRoot> specification = null, params Expression<Func<TAggregateRoot, dynamic>>[] eagerLoadingProperties)

@@ -16,20 +16,20 @@ namespace Ego.Application
     public class StockInBillApp
     {
         static IContext _context = ServiceLocator.Instance.GetService<IContext>();
-        static IRepStockInBill _rep_StockInBill = ServiceLocator.Instance.GetService<IRepStockInBill>(new KeyValuePair<string, object>("ctx", _context));
-        static IRepInventory _rep_Inventory = ServiceLocator.Instance.GetService<IRepInventory>(new KeyValuePair<string, object>("ctx", _context));
-        static IServiceDomain _service_Domain;
-        static EventStockInBill _event_StockInBill;
+        static IStockInBillRepository _rep_StockInBill = ServiceLocator.Instance.GetService<IStockInBillRepository>(new KeyValuePair<string, object>("ctx", _context));
+        static IInventoryRepository _rep_Inventory = ServiceLocator.Instance.GetService<IInventoryRepository>(new KeyValuePair<string, object>("ctx", _context));
+        static IDomainService _service_Domain;
+        static StockInBillEvent _event_StockInBill;
 
         public StockInBillApp()
         {
             _context = ServiceLocator.Instance.GetService<IContext>();
 
-            _rep_StockInBill = ServiceLocator.Instance.GetService<IRepStockInBill>
+            _rep_StockInBill = ServiceLocator.Instance.GetService<IStockInBillRepository>
                 (new KeyValuePair<string, object>("ctx", _context));
 
-            _service_Domain = new Ego.Domain.Service.ServiceDomain(_context, _rep_Inventory);
-            _event_StockInBill = new Ego.Domain.Events.EventStockInBill(_context, _rep_StockInBill, _service_Domain);
+            _service_Domain = new Ego.Domain.Service.DomainService(_context, _rep_Inventory);
+            _event_StockInBill = new Ego.Domain.Events.StockInBillEvent(_context, _rep_StockInBill, _service_Domain);
 
             //_service_Domain = ServiceLocator.Instance.GetService<IServiceDomain>
             //    (new KeyValuePair<string, object>("ctx", _context), 

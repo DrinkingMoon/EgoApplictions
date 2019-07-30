@@ -50,7 +50,7 @@
   <ItemGroup>
     <Compile Include="ContextEntityFramework.cs" />
     <Compile Include="InstanceDbContext.cs" />
-    <Compile Include="Mapping\MapUser.cs" />
+    <Compile Include="Mapping\UserEntityTypeConfiguration.cs" />
     <Compile Include="Migrations\201907260331239_Init.cs" />
     <Compile Include="Migrations\201907260331239_Init.Designer.cs">
       <DependentUpon>201907260331239_Init.cs</DependentUpon>

@@ -59,11 +59,5 @@ namespace Ego.Domain
             get { return id; }
             set { id = value; }
         }
-        //public DateTime? S_CreateTime { get; set; }
-        //public string S_CreateUser { get; set; }
-        //public DateTime? S_UpdateTime { get; set; }
-        //public string S_UpdateUser { get; set; }
-        //public DateTime? S_DeleteTime { get; set; }
-        //public string S_DeleteUser { get; set; }
     }
 }

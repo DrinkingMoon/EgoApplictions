@@ -17,8 +17,8 @@ namespace Ego.Application
     public class UserApp
     {
         static IContext _context = RepositoryFactory.EFDbContextUser();
-        static IRepUser _rep_User = RepositoryFactory.Repository<User, IRepUser>(_context);
-        IEventUser _event_User = new EventUser(_context, _rep_User);
+        static IUserRepository _rep_User = RepositoryFactory.Repository<User, IUserRepository>(_context);
+        IUserEvent _event_User = new UserEvent(_context, _rep_User);
 
         public UserApp()
         {
