@@ -24,6 +24,7 @@
             <TextBox Width="150"  Text="{Binding Rest.Address, UpdateSourceTrigger=PropertyChanged}" Margin="10,5"/>
             <Label Content="电话" VerticalContentAlignment="Center"  Margin="10,5"/>
             <TextBox Width="150"  Text="{Binding Rest.PhoneNumber, UpdateSourceTrigger=PropertyChanged}" Margin="10,5"/>
+            <Button Content="Print" Width="100" Command="{Binding PrintCommand, Mode=OneWay}"/>
         </StackPanel>
         <DataGrid x:Name="dataGrid" Grid.Row="1" 
                   ItemsSource="{Binding Ob_vm_Dish}" 

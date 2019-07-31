@@ -17,7 +17,6 @@ namespace Ego.UIWpf.ViewModel
 
         DishViewModel _vm_SelectedDish;
         double _count;
-        string _name;
         Restaurant _rest;
         ObservableCollection<DishViewModel> _ob_vm_Dish = new ObservableCollection<DishViewModel>();
 
@@ -25,6 +24,18 @@ namespace Ego.UIWpf.ViewModel
         public double Count { get => _count; set => _count = value; }
         public ObservableCollection<DishViewModel> Ob_vm_Dish { get => _ob_vm_Dish; set => _ob_vm_Dish = value; }
         public Restaurant Rest { get => _rest; set => _rest = value; }
+
+        public ICommand PrintCommand
+        {
+            get
+            {
+                return new RelayCommand(() =>
+                {
+                    Report.Report1 report = new Report.Report1();
+                    report.ShowDialog();
+                });
+            }
+        }
 
         public ICommand SelectCommand
         {

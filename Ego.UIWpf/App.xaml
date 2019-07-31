@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
              xmlns:local="clr-namespace:Ego.UIWpf" 
              Startup="Application_Startup" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
+             xmlns:vm="clr-namespace:Ego.UIWpf.ViewModel"
              d1p1:Ignorable="d" 
              xmlns:d1p1="http://schemas.openxmlformats.org/markup-compatibility/2006">
   <Application.Resources>
@@ -14,7 +15,7 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.LightBlue.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Teal.xaml" />
             </ResourceDictionary.MergedDictionaries>
-            <vm:ViewModelLocator x:Key="Locator" d:IsDataSource="True" xmlns:vm="clr-namespace:Ego.UIWpf.ViewModel" />
+            <vm:ViewModelLocator x:Key="Locator" d:IsDataSource="True" />
             <!--<Style TargetType="{x:Type TextBlock}">
                 <Setter Property="TextWrapping" Value="Wrap"/>
                 <Setter Property="TextTrimming" Value="None"/>

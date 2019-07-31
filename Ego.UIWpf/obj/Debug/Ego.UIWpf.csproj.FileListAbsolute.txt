@@ -61,3 +61,11 @@ E:\workspace\VisualStudioProjects\EgoApplictions\Ego.UIWpf\obj\Debug\Ego.UIWpf.c
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.UIWpf\bin\Debug\Ego.Domain.Repositories.EFDbContextEgo.dll
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.UIWpf\bin\Debug\Ego.Domain.Repositories.EFDbContextEgo.pdb
 E:\workspace\VisualStudioProjects\EgoApplictions\Ego.UIWpf\bin\Debug\Ego.Domain.Repositories.EFDbContextEgo.dll.config
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.UIWpf\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.UIWpf\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.UIWpf\obj\Debug\Ego.UIWpf.Report.Report1.resources
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.UIWpf\obj\Debug\RdlCompile.cache
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.UIWpf\obj\Debug\RdlCompile.compiled
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.UIWpf\bin\Debug\Microsoft.Build.Utilities.v3.5.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.UIWpf\bin\Debug\ADODB.dll
+E:\workspace\VisualStudioProjects\EgoApplictions\Ego.UIWpf\bin\Debug\zh-CHS\Microsoft.Build.Utilities.v3.5.resources.dll

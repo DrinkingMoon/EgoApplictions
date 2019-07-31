@@ -36,4 +36,3 @@ D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\bin\Debug\Un
 D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\bin\Debug\Unity.Container.pdb
 D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\bin\Debug\Unity.Interception.pdb
 D:\workSpace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\obj\Debug\Ego.Infrastructure.csproj.CopyComplete
-E:\workspace\VisualStudioProjects\EgoApplictions\Ego.Infrastructure\obj\Debug\Ego.Infrastructure.csprojAssemblyReference.cache
