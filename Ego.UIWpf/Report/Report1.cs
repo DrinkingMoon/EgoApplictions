@@ -1,7 +1,10 @@
 ﻿using Ego.Application;
+using Ego.Domain.Model;
 using Ego.Domain.Repositories.EFDbContextEgo;
 using Ego.Domain.Repositories.EntityFramework;
+using Microsoft.Reporting.WinForms;
 using System;
+
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,12 +25,12 @@ namespace Ego.UIWpf.Report
 
         private void Report1_Load(object sender, EventArgs e)
         {
-
             reportViewer1.LocalReport.ReportEmbeddedResource = "Ego.UIWpf.Report.Report1.rdlc";
             reportViewer1.LocalReport.DataSources.Clear();
-            reportViewer1.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("Restaurant",
-                new RestaurantRepository(new ContextEntityFramework()).GetList()));
 
+            reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("Restaurant", 
+                new RestaurantRepository(new ContextEntityFramework()).GetList()));
+            reportViewer1.LocalReport.Refresh();
             reportViewer1.RefreshReport();
         }
     }
