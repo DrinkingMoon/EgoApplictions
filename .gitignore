@@ -7,3 +7,5 @@
 .vs/EgoApplictions/v16/Server/sqlite3/storage.ide
 .vs/EgoApplictions/v16/.suo
 *.cache
+Ego.Application/bin
+Ego.Application/obj
