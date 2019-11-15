@@ -9,3 +9,5 @@
 *.cache
 /Ego.Application/bin
 /Ego.Application/obj
+Ego.Domain.Repositories.EFDbContextEgo/bin
+Ego.Domain.Repositories.EFDbContextEgo/obj
