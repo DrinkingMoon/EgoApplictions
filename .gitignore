@@ -11,3 +11,5 @@
 /Ego.Application/obj
 Ego.Domain.Repositories.EFDbContextEgo/bin
 Ego.Domain.Repositories.EFDbContextEgo/obj
+Ego.UIWpf/bin
+Ego.UIWpf/obj
