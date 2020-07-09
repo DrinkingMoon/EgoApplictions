@@ -2,8 +2,14 @@
 # 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
 ################################################################################
 
-/.vs/EgoApplictions/v16/Server/sqlite3/storage.ide-shm
-/.vs/EgoApplictions/v16/Server/sqlite3/storage.ide-wal
-/.vs/EgoApplictions/v16/Server/sqlite3/storage.ide
-/.vs/EgoApplictions/v16/.suo
+.vs/EgoApplictions/v16/Server/sqlite3/storage.ide-shm
+.vs/EgoApplictions/v16/Server/sqlite3/storage.ide-wal
+.vs/EgoApplictions/v16/Server/sqlite3/storage.ide
+.vs/EgoApplictions/v16/.suo
 *.cache
+/Ego.Application/bin
+/Ego.Application/obj
+Ego.Domain.Repositories.EFDbContextEgo/bin
+Ego.Domain.Repositories.EFDbContextEgo/obj
+Ego.UIWpf/bin
+Ego.UIWpf/obj
